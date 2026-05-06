@@ -1,0 +1,1611 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <meta name="theme-color" content="#0A0A0C" />
+  <meta name="description" content="JM Innenaufbereitung in Wunstorf — Präzision & Reinheit. Mobile professionelle Auto-Innenraumreinigung. Wir kommen zu Ihnen. Faire Festpreise, Premium-Produkte, 100% Handarbeit." />
+  <meta name="keywords" content="Auto Innenaufbereitung Wunstorf, Autoreinigung Wunstorf, mobile Autoaufbereitung, Polsterreinigung, Lederreinigung, JM Innenaufbereitung" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="JM Innenaufbereitung | Präzision & Reinheit · Wunstorf" />
+  <meta property="og:description" content="Mobile Auto-Innenaufbereitung in Wunstorf. Wir kommen zu Ihnen — gründliche Innenaufbereitung mit professionellen Produkten zu fairen Festpreisen." />
+  <meta property="og:type" content="website" />
+  <meta property="og:locale" content="de_DE" />
+  <meta property="og:image" content="images/logo.jpeg" />
+
+  <title>JM Innenaufbereitung | Präzision & Reinheit · Wunstorf</title>
+
+  <link rel="icon" type="image/jpeg" href="images/logo.jpeg" />
+
+  <!-- Fonts: Playfair Display (Display) + Manrope (Body) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800&family=Manrope:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+
+  <style>
+    /* =========================================
+       JM AUTO INNENAUFBEREITUNG — STYLES
+       Schwarz / Gold Premium Theme
+       ========================================= */
+
+    :root {
+      /* Farbpalette */
+      --bg-primary: #0A0A0C;
+      --bg-secondary: #111114;
+      --bg-tertiary: #18181c;
+      --bg-card: #131316;
+      --gold: #C9A961;
+      --gold-bright: #E0C282;
+      --gold-dark: #A88840;
+      --gold-glow: rgba(201, 169, 97, 0.18);
+      --text-primary: #F5F5F5;
+      --text-secondary: #B4B4B8;
+      --text-muted: #6A6A70;
+      --border: rgba(201, 169, 97, 0.14);
+      --border-strong: rgba(201, 169, 97, 0.30);
+
+      /* Typografie */
+      --font-display: 'Playfair Display', Georgia, serif;
+      --font-body: 'Manrope', system-ui, -apple-system, sans-serif;
+
+      /* Layout */
+      --container-max: 1200px;
+      --section-padding-y: clamp(4rem, 8vw, 7rem);
+    }
+
+    /* Reset */
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; -webkit-text-size-adjust: 100%; }
+
+    body {
+      background: var(--bg-primary);
+      color: var(--text-primary);
+      font-family: var(--font-body);
+      font-weight: 400;
+      line-height: 1.6;
+      overflow-x: hidden;
+      min-height: 100vh;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+    }
+
+    img { max-width: 100%; height: auto; display: block; }
+    a { color: inherit; text-decoration: none; }
+    button { font-family: inherit; cursor: pointer; border: none; background: none; color: inherit; }
+    input, textarea, select { font-family: inherit; }
+
+    /* Subtle noise texture für Premium-Atmosphäre */
+    body::before {
+      content: '';
+      position: fixed;
+      inset: 0;
+      pointer-events: none;
+      opacity: 0.025;
+      z-index: 1;
+      background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='2' /%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+    }
+
+    /* Container */
+    .container {
+      width: 100%;
+      max-width: var(--container-max);
+      margin: 0 auto;
+      padding: 0 clamp(1.25rem, 4vw, 2.5rem);
+      position: relative;
+      z-index: 2;
+    }
+
+    /* Typografie */
+    h1, h2, h3, h4 { font-family: var(--font-display); font-weight: 600; line-height: 1.15; letter-spacing: -0.01em; }
+    .h-display { font-size: clamp(2.5rem, 7vw, 5rem); font-weight: 700; line-height: 1.05; letter-spacing: -0.025em; }
+    .h-section { font-size: clamp(2rem, 4.5vw, 3.25rem); font-weight: 600; }
+
+    .eyebrow {
+      display: inline-block;
+      font-family: var(--font-body);
+      font-size: 0.75rem;
+      font-weight: 600;
+      letter-spacing: 0.22em;
+      text-transform: uppercase;
+      color: var(--gold);
+      margin-bottom: 1.25rem;
+    }
+    .eyebrow::before { content: '— '; color: var(--gold-dark); }
+
+    .text-muted { color: var(--text-secondary); }
+    .gold { color: var(--gold); }
+
+    /* Buttons */
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.6rem;
+      padding: 1rem 1.75rem;
+      border-radius: 4px;
+      font-weight: 600;
+      font-size: 0.95rem;
+      letter-spacing: 0.02em;
+      transition: all 0.3s cubic-bezier(0.2, 0.8, 0.3, 1);
+      white-space: nowrap;
+      border: 1px solid transparent;
+      min-height: 48px; /* Touch-Target */
+    }
+    .btn-primary {
+      background: var(--gold);
+      color: #0A0A0C;
+      box-shadow: 0 4px 20px var(--gold-glow);
+    }
+    .btn-primary:hover { background: var(--gold-bright); transform: translateY(-2px); box-shadow: 0 8px 28px var(--gold-glow); }
+    .btn-secondary {
+      background: transparent;
+      color: var(--text-primary);
+      border-color: var(--border-strong);
+    }
+    .btn-secondary:hover { border-color: var(--gold); color: var(--gold); background: rgba(201, 169, 97, 0.05); }
+
+    /* ============ NAVIGATION ============ */
+    .nav {
+      position: fixed;
+      top: 0; left: 0; right: 0;
+      z-index: 100;
+      padding: 1rem 0;
+      background: rgba(10, 10, 12, 0.85);
+      backdrop-filter: saturate(180%) blur(14px);
+      -webkit-backdrop-filter: saturate(180%) blur(14px);
+      border-bottom: 1px solid transparent;
+      transition: border-color 0.3s, padding 0.3s;
+    }
+    .nav.scrolled { border-bottom-color: var(--border); padding: 0.7rem 0; }
+    .nav-inner { display: flex; align-items: center; justify-content: space-between; gap: 1rem; }
+    .nav-logo { display: flex; align-items: center; gap: 0.7rem; }
+    .nav-logo img { height: 42px; width: auto; }
+    .nav-logo-text { display: none; font-family: var(--font-display); font-size: 1.1rem; font-weight: 600; letter-spacing: 0.02em; }
+    @media (min-width: 480px) { .nav-logo-text { display: block; } }
+
+    .nav-links { display: none; gap: 2rem; align-items: center; }
+    .nav-links a { font-size: 0.9rem; font-weight: 500; color: var(--text-secondary); transition: color 0.2s; position: relative; }
+    .nav-links a:hover { color: var(--gold); }
+    .nav-links a::after { content: ''; position: absolute; bottom: -6px; left: 0; right: 0; height: 1px; background: var(--gold); transform: scaleX(0); transition: transform 0.3s; }
+    .nav-links a:hover::after { transform: scaleX(1); }
+    @media (min-width: 900px) { .nav-links { display: flex; } }
+
+    .nav-cta { display: flex; gap: 0.5rem; }
+    .nav-cta .btn { padding: 0.6rem 1rem; font-size: 0.85rem; min-height: auto; }
+
+    /* Mobile menu */
+    .nav-burger {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      gap: 5px;
+      width: 40px; height: 40px;
+      align-items: center;
+    }
+    .nav-burger span {
+      width: 22px; height: 1.5px;
+      background: var(--text-primary);
+      transition: all 0.3s;
+    }
+    @media (min-width: 900px) { .nav-burger { display: none; } }
+
+    .mobile-menu {
+      position: fixed;
+      top: 0; left: 0; right: 0; bottom: 0;
+      background: rgba(10, 10, 12, 0.98);
+      backdrop-filter: blur(20px);
+      z-index: 99;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 2rem;
+      padding: 4rem 1.5rem;
+      transform: translateY(-100%);
+      transition: transform 0.4s cubic-bezier(0.7, 0, 0.3, 1);
+    }
+    .mobile-menu.open { transform: translateY(0); }
+    .mobile-menu a {
+      font-family: var(--font-display);
+      font-size: 1.75rem;
+      color: var(--text-primary);
+      transition: color 0.2s;
+    }
+    .mobile-menu a:hover { color: var(--gold); }
+
+    /* ============ HERO ============ */
+    .hero {
+      position: relative;
+      min-height: 100vh;
+      min-height: 100svh; /* iOS-Safari-Fix */
+      display: flex;
+      align-items: center;
+      padding-top: 6rem;
+      padding-bottom: 4rem;
+      overflow: hidden;
+    }
+    .hero-bg {
+      position: absolute;
+      inset: 0;
+      background:
+        radial-gradient(circle at 20% 30%, rgba(201, 169, 97, 0.12) 0%, transparent 45%),
+        radial-gradient(circle at 80% 70%, rgba(201, 169, 97, 0.08) 0%, transparent 55%),
+        linear-gradient(180deg, #0A0A0C 0%, #14141a 100%);
+    }
+    .hero-bg::after {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background-image:
+        linear-gradient(rgba(201, 169, 97, 0.04) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(201, 169, 97, 0.04) 1px, transparent 1px);
+      background-size: 60px 60px;
+      mask-image: radial-gradient(ellipse at center, black 30%, transparent 75%);
+      -webkit-mask-image: radial-gradient(ellipse at center, black 30%, transparent 75%);
+    }
+    .hero-content { position: relative; z-index: 2; max-width: 850px; }
+    .hero-content h1 { margin-bottom: 1.5rem; }
+    .hero-content h1 .gold-accent { color: var(--gold); font-style: italic; }
+    .hero-subline {
+      font-size: clamp(1.05rem, 1.6vw, 1.3rem);
+      color: var(--text-secondary);
+      margin-bottom: 1rem;
+      max-width: 580px;
+      line-height: 1.6;
+    }
+    .hero-tagline {
+      font-family: var(--font-display);
+      font-style: italic;
+      font-size: clamp(1rem, 1.4vw, 1.2rem);
+      color: var(--gold);
+      letter-spacing: 0.04em;
+      margin-bottom: 2.5rem;
+      position: relative;
+      padding-left: 2.5rem;
+    }
+    .hero-tagline::before {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 50%;
+      width: 1.75rem;
+      height: 1px;
+      background: var(--gold);
+    }
+    .hero-actions { display: flex; flex-wrap: wrap; gap: 1rem; }
+
+    /* Goldener vertikaler Strich als Hero-Akzent */
+    .hero-side-mark {
+      position: absolute;
+      left: 1rem;
+      top: 50%;
+      transform: translateY(-50%);
+      display: none;
+      flex-direction: column;
+      align-items: center;
+      gap: 1rem;
+      z-index: 2;
+      color: var(--text-muted);
+      font-size: 0.7rem;
+      letter-spacing: 0.3em;
+    }
+    .hero-side-mark::before { content: ''; width: 1px; height: 60px; background: var(--gold); }
+    .hero-side-mark::after { content: ''; width: 1px; height: 60px; background: var(--border); }
+    .hero-side-mark span { writing-mode: vertical-rl; text-orientation: mixed; transform: rotate(180deg); text-transform: uppercase; }
+    @media (min-width: 1100px) { .hero-side-mark { display: flex; } }
+
+    /* ============ TRUST BAR ============ */
+    .trust-bar {
+      padding: 2.5rem 0;
+      border-top: 1px solid var(--border);
+      border-bottom: 1px solid var(--border);
+      background: var(--bg-secondary);
+    }
+    .trust-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 1.5rem 1rem;
+      text-align: center;
+    }
+    .trust-item .label { font-family: var(--font-display); font-size: 1.1rem; font-weight: 600; color: var(--text-primary); margin-bottom: 0.25rem; }
+    .trust-item .desc { font-size: 0.8rem; color: var(--text-muted); letter-spacing: 0.05em; text-transform: uppercase; }
+    @media (min-width: 700px) { .trust-grid { grid-template-columns: repeat(4, 1fr); } }
+
+    /* ============ SECTION GENERIC ============ */
+    .section { padding: var(--section-padding-y) 0; position: relative; }
+    .section-header { max-width: 700px; margin: 0 auto 3.5rem; text-align: center; }
+    .section-header.left { margin-left: 0; text-align: left; }
+    .section-header h2 { margin-bottom: 1rem; }
+    .section-header p { color: var(--text-secondary); font-size: 1.05rem; }
+
+    /* ============ VORHER/NACHHER SLIDER ============ */
+    .slider-wrap {
+      position: relative;
+      max-width: 1000px;
+      margin: 0 auto;
+      border-radius: 8px;
+      overflow: hidden;
+      border: 1px solid var(--border);
+      box-shadow: 0 30px 80px rgba(0, 0, 0, 0.5);
+    }
+    .slider-container {
+      position: relative;
+      width: 100%;
+      aspect-ratio: 16 / 10;
+      overflow: hidden;
+      cursor: ew-resize;
+      user-select: none;
+      -webkit-user-select: none;
+      touch-action: none;
+    }
+    .slider-img {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center;
+      pointer-events: none;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: var(--font-display);
+      font-size: 1.5rem;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+    }
+    /* Platzhalter-Optik (bis echte Bilder da sind) */
+    .slider-img.before {
+      background:
+        linear-gradient(135deg, #2a2522 0%, #1a1612 100%),
+        repeating-linear-gradient(45deg, transparent 0 12px, rgba(0,0,0,0.3) 12px 14px);
+      color: #6b5e4f;
+    }
+    .slider-img.after {
+      background: linear-gradient(135deg, #1a1a1f 0%, #0d0d10 100%);
+      clip-path: polygon(0 0, 50% 0, 50% 100%, 0 100%);
+      color: var(--gold);
+    }
+    .slider-label {
+      position: absolute;
+      top: 1rem;
+      padding: 0.4rem 0.9rem;
+      background: rgba(10, 10, 12, 0.7);
+      backdrop-filter: blur(6px);
+      border: 1px solid var(--border);
+      border-radius: 4px;
+      font-size: 0.75rem;
+      font-weight: 600;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      z-index: 3;
+      pointer-events: none;
+    }
+    .slider-label.before-label { left: 1rem; color: var(--text-secondary); }
+    .slider-label.after-label { right: 1rem; color: var(--gold); border-color: var(--border-strong); }
+    .slider-handle {
+      position: absolute;
+      top: 0; bottom: 0;
+      left: 50%;
+      width: 2px;
+      background: var(--gold);
+      z-index: 4;
+      pointer-events: none;
+      transform: translateX(-1px);
+      box-shadow: 0 0 20px var(--gold-glow);
+    }
+    .slider-grip {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      width: 48px;
+      height: 48px;
+      transform: translate(-50%, -50%);
+      background: var(--gold);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.5), 0 0 30px var(--gold-glow);
+      pointer-events: none;
+    }
+    .slider-grip svg { width: 22px; height: 22px; color: #0A0A0C; }
+    .slider-disclaimer {
+      text-align: center;
+      margin-top: 1.25rem;
+      font-size: 0.85rem;
+      color: var(--text-muted);
+      font-style: italic;
+    }
+
+    /* ============ SERVICES ============ */
+    .services-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 1.5rem;
+    }
+    @media (min-width: 800px) { .services-grid { grid-template-columns: repeat(3, 1fr); align-items: stretch; } }
+
+    .service-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-radius: 6px;
+      padding: 2rem 1.75rem;
+      display: flex;
+      flex-direction: column;
+      position: relative;
+      overflow: hidden;
+      transition: border-color 0.3s, transform 0.3s;
+    }
+    .service-card:hover { border-color: var(--border-strong); transform: translateY(-4px); }
+    .service-card.featured {
+      border-color: var(--gold);
+      background: linear-gradient(180deg, rgba(201, 169, 97, 0.08) 0%, var(--bg-card) 30%);
+    }
+    .service-card.featured::before {
+      content: 'Empfehlung';
+      position: absolute;
+      top: 1rem; right: 1rem;
+      padding: 0.25rem 0.7rem;
+      background: var(--gold);
+      color: #0A0A0C;
+      font-size: 0.7rem;
+      font-weight: 700;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      border-radius: 3px;
+    }
+    .service-num {
+      font-family: var(--font-display);
+      font-size: 0.9rem;
+      color: var(--gold);
+      letter-spacing: 0.2em;
+      margin-bottom: 0.5rem;
+    }
+    .service-card h3 {
+      font-size: 1.5rem;
+      margin-bottom: 0.5rem;
+    }
+    .service-tag {
+      font-size: 0.85rem;
+      color: var(--text-muted);
+      margin-bottom: 1.5rem;
+      font-style: italic;
+    }
+    .service-list {
+      list-style: none;
+      flex-grow: 1;
+      margin-bottom: 1.5rem;
+    }
+    .service-item {
+      padding: 0.9rem 0;
+      border-bottom: 1px solid var(--border);
+    }
+    .service-item:last-child { border-bottom: none; }
+    .service-item-title {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      gap: 1rem;
+      margin-bottom: 0.25rem;
+    }
+    .service-item-title .name { font-weight: 600; color: var(--text-primary); font-size: 0.95rem; }
+    .service-item-title .price { font-family: var(--font-display); font-weight: 600; color: var(--gold); white-space: nowrap; font-size: 1rem; }
+    .service-item-desc { font-size: 0.85rem; color: var(--text-secondary); line-height: 1.5; }
+    .service-item-note { font-size: 0.78rem; color: var(--text-muted); margin-top: 0.35rem; font-style: italic; }
+
+    .service-price-big {
+      font-family: var(--font-display);
+      font-size: 2.5rem;
+      color: var(--gold);
+      font-weight: 700;
+      margin: 1rem 0;
+      line-height: 1;
+    }
+    .service-savings {
+      display: inline-block;
+      padding: 0.3rem 0.7rem;
+      background: rgba(201, 169, 97, 0.1);
+      border: 1px solid var(--border-strong);
+      border-radius: 3px;
+      color: var(--gold);
+      font-size: 0.8rem;
+      font-weight: 600;
+      margin-bottom: 1rem;
+    }
+    .service-card .btn { margin-top: auto; }
+
+    /* ============ ÜBER UNS ============ */
+    .ueber {
+      background: linear-gradient(180deg, transparent 0%, var(--bg-secondary) 50%, transparent 100%);
+    }
+    .ueber-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 3rem;
+      align-items: center;
+    }
+    @media (min-width: 900px) { .ueber-grid { grid-template-columns: 1fr 1fr; gap: 5rem; } }
+
+    .ueber-text h2 { margin-bottom: 1.5rem; }
+    .ueber-text p { color: var(--text-secondary); margin-bottom: 1rem; font-size: 1.05rem; }
+    .ueber-features {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.75rem;
+      margin-top: 2rem;
+    }
+    .feature-pill {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      padding: 0.6rem 1rem;
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-radius: 100px;
+      font-size: 0.85rem;
+      font-weight: 500;
+    }
+    .feature-pill svg { width: 14px; height: 14px; color: var(--gold); flex-shrink: 0; }
+
+    .ueber-visual {
+      position: relative;
+      aspect-ratio: 4 / 5;
+      border-radius: 6px;
+      overflow: hidden;
+      border: 1px solid var(--border);
+      background:
+        radial-gradient(circle at 50% 50%, rgba(201, 169, 97, 0.15) 0%, transparent 60%),
+        linear-gradient(135deg, #14141a 0%, #0A0A0C 100%);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 2rem;
+    }
+    .ueber-visual img { max-width: 80%; max-height: 80%; opacity: 0.95; object-fit: contain; }
+
+    /* ============ ABLAUF ============ */
+    .ablauf-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 2rem;
+      counter-reset: step;
+    }
+    @media (min-width: 800px) { .ablauf-grid { grid-template-columns: repeat(3, 1fr); gap: 1.5rem; } }
+
+    .ablauf-step {
+      padding: 2rem;
+      border: 1px solid var(--border);
+      border-radius: 6px;
+      background: var(--bg-card);
+      position: relative;
+      transition: border-color 0.3s;
+    }
+    .ablauf-step:hover { border-color: var(--border-strong); }
+    .ablauf-step::before {
+      counter-increment: step;
+      content: '0' counter(step);
+      position: absolute;
+      top: 1.5rem; right: 1.5rem;
+      font-family: var(--font-display);
+      font-size: 2.5rem;
+      font-weight: 700;
+      color: var(--gold);
+      opacity: 0.25;
+      line-height: 1;
+    }
+    .ablauf-step h3 { font-size: 1.35rem; margin-bottom: 0.75rem; padding-right: 3rem; }
+    .ablauf-step p { color: var(--text-secondary); font-size: 0.95rem; }
+
+    /* ============ GALERIE ============ */
+    .galerie-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 0.75rem;
+    }
+    @media (min-width: 700px) { .galerie-grid { grid-template-columns: repeat(3, 1fr); gap: 1rem; } }
+
+    .galerie-item {
+      aspect-ratio: 1;
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-radius: 4px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--text-muted);
+      font-size: 0.8rem;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      transition: border-color 0.3s, transform 0.3s;
+      overflow: hidden;
+      position: relative;
+    }
+    .galerie-item:hover { border-color: var(--border-strong); transform: scale(1.02); }
+    .galerie-item img { width: 100%; height: 100%; object-fit: cover; }
+    .galerie-item .placeholder-icon { width: 32px; height: 32px; opacity: 0.4; }
+    .galerie-hint {
+      text-align: center;
+      margin-top: 1.5rem;
+      color: var(--text-muted);
+      font-size: 0.85rem;
+      font-style: italic;
+    }
+
+    /* ============ BUCHUNG ============ */
+    .buchung-wrap {
+      max-width: 850px;
+      margin: 0 auto;
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      padding: clamp(1.5rem, 4vw, 3rem);
+      text-align: center;
+    }
+    .buchung-info {
+      display: inline-block;
+      padding: 0.5rem 1rem;
+      background: rgba(201, 169, 97, 0.08);
+      border: 1px solid var(--border-strong);
+      border-radius: 100px;
+      font-size: 0.85rem;
+      color: var(--gold);
+      margin-bottom: 1.5rem;
+      font-weight: 500;
+    }
+    .calendly-placeholder {
+      margin-top: 2rem;
+      padding: 3rem 1.5rem;
+      border: 1px dashed var(--border-strong);
+      border-radius: 6px;
+      color: var(--text-muted);
+      font-size: 0.9rem;
+    }
+    .calendly-placeholder strong { color: var(--gold); display: block; margin-bottom: 0.5rem; font-family: var(--font-display); font-size: 1.1rem; }
+    /* Calendly Embed Container */
+    .calendly-inline-widget {
+      min-width: 320px;
+      width: 100%;
+      height: 700px;
+    }
+
+    /* ============ FAQ ============ */
+    .faq-wrap { max-width: 800px; margin: 0 auto; }
+    .faq-item {
+      border-bottom: 1px solid var(--border);
+      transition: border-color 0.3s;
+    }
+    .faq-item:first-child { border-top: 1px solid var(--border); }
+    .faq-question {
+      width: 100%;
+      padding: 1.5rem 0;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 1rem;
+      text-align: left;
+      font-family: var(--font-display);
+      font-size: 1.15rem;
+      font-weight: 500;
+      color: var(--text-primary);
+      transition: color 0.2s;
+    }
+    .faq-question:hover { color: var(--gold); }
+    .faq-question .icon {
+      width: 28px; height: 28px;
+      flex-shrink: 0;
+      border: 1px solid var(--border-strong);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: all 0.3s;
+    }
+    .faq-question .icon::before,
+    .faq-question .icon::after {
+      content: '';
+      position: absolute;
+      background: var(--gold);
+      transition: transform 0.3s;
+    }
+    .faq-question .icon::before { width: 10px; height: 1.5px; }
+    .faq-question .icon::after { width: 1.5px; height: 10px; }
+    .faq-item.open .faq-question .icon { background: var(--gold); }
+    .faq-item.open .faq-question .icon::before,
+    .faq-item.open .faq-question .icon::after { background: #0A0A0C; }
+    .faq-item.open .faq-question .icon::after { transform: scaleY(0); }
+    .faq-answer {
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.4s ease, padding 0.3s;
+      color: var(--text-secondary);
+      line-height: 1.7;
+    }
+    .faq-item.open .faq-answer { max-height: 500px; padding-bottom: 1.5rem; }
+
+    /* ============ CTA BANNER ============ */
+    .cta-banner {
+      position: relative;
+      padding: clamp(3rem, 6vw, 5rem) 0;
+      text-align: center;
+      overflow: hidden;
+      background:
+        radial-gradient(ellipse at center, rgba(201, 169, 97, 0.08) 0%, transparent 70%),
+        var(--bg-secondary);
+      border-top: 1px solid var(--border);
+      border-bottom: 1px solid var(--border);
+    }
+    .cta-banner h2 { margin-bottom: 1rem; }
+    .cta-banner p { color: var(--text-secondary); margin-bottom: 2rem; font-size: 1.05rem; }
+
+    /* ============ KONTAKT ============ */
+    .kontakt-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 3rem;
+    }
+    @media (min-width: 900px) { .kontakt-grid { grid-template-columns: 1.2fr 1fr; gap: 4rem; } }
+
+    .kontakt-info p { color: var(--text-secondary); margin-bottom: 2rem; }
+    .kontakt-detail {
+      padding: 1.25rem 0;
+      border-bottom: 1px solid var(--border);
+    }
+    .kontakt-detail .label {
+      font-size: 0.75rem;
+      color: var(--gold);
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      margin-bottom: 0.4rem;
+      font-weight: 600;
+    }
+    .kontakt-detail .value {
+      font-family: var(--font-display);
+      font-size: 1.15rem;
+      color: var(--text-primary);
+    }
+    .kontakt-detail .value a { transition: color 0.2s; }
+    .kontakt-detail .value a:hover { color: var(--gold); }
+    .kontakt-detail .hint { font-size: 0.8rem; color: var(--text-muted); margin-top: 0.4rem; }
+
+    /* Form */
+    .kontakt-form { background: var(--bg-card); border: 1px solid var(--border); border-radius: 6px; padding: clamp(1.5rem, 3vw, 2.5rem); }
+    .form-group { margin-bottom: 1.25rem; }
+    .form-label {
+      display: block;
+      font-size: 0.8rem;
+      font-weight: 600;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--text-secondary);
+      margin-bottom: 0.5rem;
+    }
+    .form-input, .form-textarea {
+      width: 100%;
+      padding: 0.85rem 1rem;
+      background: var(--bg-primary);
+      border: 1px solid var(--border);
+      border-radius: 4px;
+      color: var(--text-primary);
+      font-size: 0.95rem;
+      transition: border-color 0.2s, background 0.2s;
+    }
+    .form-input:focus, .form-textarea:focus {
+      outline: none;
+      border-color: var(--gold);
+      background: var(--bg-secondary);
+    }
+    .form-textarea { resize: vertical; min-height: 120px; }
+    .form-honeypot { position: absolute; left: -9999px; opacity: 0; pointer-events: none; }
+    .form-status {
+      padding: 1rem;
+      border-radius: 4px;
+      margin-top: 1rem;
+      font-size: 0.9rem;
+      display: none;
+    }
+    .form-status.success { display: block; background: rgba(50, 200, 100, 0.1); border: 1px solid rgba(50, 200, 100, 0.3); color: #7ed79e; }
+    .form-status.error { display: block; background: rgba(220, 60, 60, 0.1); border: 1px solid rgba(220, 60, 60, 0.3); color: #f08585; }
+
+    /* ============ FOOTER ============ */
+    .footer {
+      padding: 4rem 0 2rem;
+      border-top: 1px solid var(--border);
+      background: var(--bg-secondary);
+    }
+    .footer-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 2rem;
+      margin-bottom: 3rem;
+    }
+    @media (min-width: 700px) { .footer-grid { grid-template-columns: 2fr 1fr 1fr; gap: 3rem; } }
+    .footer-brand img { height: 60px; width: auto; margin-bottom: 1rem; }
+    .footer-brand p { color: var(--text-muted); font-size: 0.9rem; max-width: 320px; }
+    .footer-col h4 {
+      font-family: var(--font-body);
+      font-size: 0.8rem;
+      font-weight: 700;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      color: var(--gold);
+      margin-bottom: 1.25rem;
+    }
+    .footer-col ul { list-style: none; }
+    .footer-col li { margin-bottom: 0.7rem; font-size: 0.9rem; color: var(--text-secondary); }
+    .footer-col a:hover { color: var(--gold); }
+
+    .footer-bottom {
+      padding-top: 2rem;
+      border-top: 1px solid var(--border);
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+      justify-content: space-between;
+      align-items: center;
+      font-size: 0.85rem;
+      color: var(--text-muted);
+    }
+    @media (min-width: 700px) { .footer-bottom { flex-direction: row; } }
+
+    /* ============ FLOATING WHATSAPP ============ */
+    .whatsapp-float {
+      position: fixed;
+      bottom: 1.5rem;
+      right: 1.5rem;
+      width: 56px;
+      height: 56px;
+      background: #25D366;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 6px 20px rgba(37, 211, 102, 0.4);
+      z-index: 90;
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+    .whatsapp-float:hover { transform: scale(1.1); box-shadow: 0 8px 28px rgba(37, 211, 102, 0.6); }
+    .whatsapp-float svg { width: 28px; height: 28px; color: white; }
+
+    /* ============ ANIMATIONS ============ */
+    @keyframes fadeInUp {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    .reveal {
+      opacity: 0;
+      transform: translateY(20px);
+      transition: opacity 0.7s ease, transform 0.7s cubic-bezier(0.2, 0.8, 0.3, 1);
+    }
+    .reveal.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+    .hero-content > * { animation: fadeInUp 0.8s cubic-bezier(0.2, 0.8, 0.3, 1) both; }
+    .hero-content .eyebrow { animation-delay: 0.1s; }
+    .hero-content h1 { animation-delay: 0.2s; }
+    .hero-content .hero-subline { animation-delay: 0.35s; }
+    .hero-content .hero-tagline { animation-delay: 0.45s; }
+    .hero-content .hero-actions { animation-delay: 0.6s; }
+
+    /* Reduced motion */
+    @media (prefers-reduced-motion: reduce) {
+      *, *::before, *::after {
+        animation-duration: 0.01ms !important;
+        transition-duration: 0.01ms !important;
+      }
+      html { scroll-behavior: auto; }
+    }
+
+    /* Edge-Case: sehr kleine Screens */
+    @media (max-width: 360px) {
+      .hero-actions .btn { width: 100%; }
+      .nav-cta { display: none; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ====================== NAVIGATION ====================== -->
+  <nav class="nav" id="nav">
+    <div class="container nav-inner">
+      <a href="#top" class="nav-logo" aria-label="JM Innenaufbereitung Startseite">
+        <img src="images/logo.jpeg" alt="JM Innenaufbereitung — Präzision & Reinheit" />
+      </a>
+      <div class="nav-links" role="menu">
+        <a href="#services">Services</a>
+        <a href="#ueber">Über uns</a>
+        <a href="#ablauf">Ablauf</a>
+        <a href="#buchung">Termin</a>
+        <a href="#faq">FAQ</a>
+        <a href="#kontakt">Kontakt</a>
+      </div>
+      <div class="nav-cta">
+        <a href="https://wa.me/4915119455591" class="btn btn-primary" target="_blank" rel="noopener">WhatsApp</a>
+      </div>
+      <button class="nav-burger" id="navBurger" aria-label="Menü öffnen" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Mobile Menu Overlay -->
+  <div class="mobile-menu" id="mobileMenu" role="menu">
+    <a href="#services" class="mm-link">Services</a>
+    <a href="#ueber" class="mm-link">Über uns</a>
+    <a href="#ablauf" class="mm-link">Ablauf</a>
+    <a href="#buchung" class="mm-link">Termin</a>
+    <a href="#faq" class="mm-link">FAQ</a>
+    <a href="#kontakt" class="mm-link">Kontakt</a>
+  </div>
+
+  <!-- ====================== HERO ====================== -->
+  <header class="hero" id="top">
+    <div class="hero-bg" aria-hidden="true"></div>
+    <div class="hero-side-mark" aria-hidden="true">
+      <span>Wunstorf</span>
+    </div>
+    <div class="container">
+      <div class="hero-content">
+        <span class="eyebrow">Mobile Auto-Innenaufbereitung · Wunstorf &amp; Umgebung</span>
+        <h1 class="h-display">
+          Ihr Auto.<br />
+          Innen <span class="gold-accent">wie neu.</span>
+        </h1>
+        <p class="hero-subline">
+          Wir kommen zu Ihnen — gründliche Innenaufbereitung mit professionellen Produkten zu fairen Festpreisen.
+        </p>
+        <p class="hero-tagline">Präzision &amp; Reinheit.</p>
+        <div class="hero-actions">
+          <a href="https://wa.me/4915119455591?text=Hallo%2C%20ich%20m%C3%B6chte%20einen%20Termin%20vereinbaren." class="btn btn-primary" target="_blank" rel="noopener">
+            Termin per WhatsApp
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+          </a>
+          <a href="#services" class="btn btn-secondary">Preise ansehen</a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- ====================== TRUST BAR ====================== -->
+  <section class="trust-bar">
+    <div class="container">
+      <div class="trust-grid">
+        <div class="trust-item">
+          <div class="label">100% Handarbeit</div>
+          <div class="desc">präzise gepflegt</div>
+        </div>
+        <div class="trust-item">
+          <div class="label">Premium-Produkte</div>
+          <div class="desc">u.a. Koch Chemie</div>
+        </div>
+        <div class="trust-item">
+          <div class="label">Mobil vor Ort</div>
+          <div class="desc">wir kommen zu Ihnen</div>
+        </div>
+        <div class="trust-item">
+          <div class="label">Faire Festpreise</div>
+          <div class="desc">keine Überraschungen</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====================== VORHER / NACHHER ====================== -->
+  <section class="section" id="vergleich">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="eyebrow">Vorher · Nachher</span>
+        <h2 class="h-section">Der Unterschied spricht für sich</h2>
+        <p>Ziehen Sie den Regler und sehen Sie selbst, wie wir Innenräume verwandeln.</p>
+      </div>
+
+      <div class="slider-wrap reveal">
+        <div class="slider-container" id="slider" role="slider" aria-label="Vorher-Nachher-Vergleich" aria-valuemin="0" aria-valuemax="100" aria-valuenow="50" tabindex="0">
+          <div class="slider-img before" aria-label="Vorher">VORHER</div>
+          <div class="slider-img after" id="sliderAfter" aria-label="Nachher">NACHHER</div>
+          <div class="slider-label before-label">Vorher</div>
+          <div class="slider-label after-label">Nachher</div>
+          <div class="slider-handle" id="sliderHandle">
+            <div class="slider-grip">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                <path d="M9 18l-6-6 6-6M15 6l6 6-6 6"/>
+              </svg>
+            </div>
+          </div>
+        </div>
+      </div>
+      <p class="slider-disclaimer">Beispiel-Illustration — echte Vorher/Nachher-Bilder folgen aus laufenden Aufträgen.</p>
+    </div>
+  </section>
+
+  <!-- ====================== SERVICES & PREISE ====================== -->
+  <section class="section" id="services">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="eyebrow">Services &amp; Preise</span>
+        <h2 class="h-section">Was wir für Sie tun</h2>
+        <p>Klare Festpreise, transparente Module — frei kombinierbar oder als Komplett-Paket.</p>
+      </div>
+
+      <div class="services-grid">
+        <!-- KARTE 1: BASIS -->
+        <article class="service-card reveal">
+          <div class="service-num">01</div>
+          <h3>Basis-Reinigung</h3>
+          <p class="service-tag">Das Grundmodul für jedes Fahrzeug</p>
+          <ul class="service-list">
+            <li class="service-item">
+              <div class="service-item-title">
+                <span class="name">Komplette Innenreinigung</span>
+                <span class="price">35 €</span>
+              </div>
+              <p class="service-item-desc">Alle Sitze, Türverkleidungen, Mittelkonsole, Kofferraum und Fußmatten werden gründlich ausgesaugt. Bei stärkerer Verschmutzung Sprühextrahierer für die Fußmatten.</p>
+            </li>
+          </ul>
+          <a href="https://wa.me/4915119455591?text=Hallo%2C%20ich%20m%C3%B6chte%20die%20Basis-Reinigung%20buchen." class="btn btn-secondary" target="_blank" rel="noopener">Anfragen</a>
+        </article>
+
+        <!-- KARTE 2: ZUSATZMODULE -->
+        <article class="service-card reveal">
+          <div class="service-num">02</div>
+          <h3>Zusatzmodule</h3>
+          <p class="service-tag">Frei kombinierbar zur Basis</p>
+          <ul class="service-list">
+            <li class="service-item">
+              <div class="service-item-title">
+                <span class="name">Cockpit &amp; Kunststoff</span>
+                <span class="price">+30 €</span>
+              </div>
+              <p class="service-item-desc">Reinigung und anschließende Pflege aller Kunststoff-Oberflächen, des Armaturenbretts und der Türverkleidungen.</p>
+            </li>
+            <li class="service-item">
+              <div class="service-item-title">
+                <span class="name">Polster Faserreinigung</span>
+                <span class="price">+15 €</span>
+              </div>
+              <p class="service-item-desc">Schonende Reinigung der Sitzfasern bei normaler bis leichter Verschmutzung mit speziellen Polsterreinigern.</p>
+              <p class="service-item-note">Bei Ledersitzen: Reinigung &amp; Pflege mit Koch Chemie Lederpflege.</p>
+            </li>
+            <li class="service-item">
+              <div class="service-item-title">
+                <span class="name">Polster Tiefenreinigung</span>
+                <span class="price">+35 €</span>
+              </div>
+              <p class="service-item-desc">Sprühextrahierer-Verfahren bei starken Flecken oder Gerüchen — tief in die Fasern.</p>
+              <p class="service-item-note">Bei Ledersitzen: Intensivreinigung &amp; Pflege mit Koch Chemie Lederreiniger.</p>
+            </li>
+            <li class="service-item">
+              <div class="service-item-title">
+                <span class="name">Scheiben innen</span>
+                <span class="price">+15 €</span>
+              </div>
+              <p class="service-item-desc">Streifenfreie Reinigung aller Innenscheiben.</p>
+            </li>
+            <li class="service-item">
+              <div class="service-item-title">
+                <span class="name">Tierhaarentfernung</span>
+                <span class="price">+15 €</span>
+              </div>
+              <p class="service-item-desc">Intensive Entfernung hartnäckiger Tierhaare aus Polstern und Teppichen.</p>
+            </li>
+          </ul>
+          <a href="https://wa.me/4915119455591?text=Hallo%2C%20ich%20interessiere%20mich%20f%C3%BCr%20die%20Zusatzmodule." class="btn btn-secondary" target="_blank" rel="noopener">Anfragen</a>
+        </article>
+
+        <!-- KARTE 3: RUNDUM FRISCH -->
+        <article class="service-card featured reveal">
+          <div class="service-num">03</div>
+          <h3>Rundum Frisch</h3>
+          <p class="service-tag">Unser Komplett-Paket</p>
+          <div class="service-price-big">65 €</div>
+          <div class="service-savings">Sparen Sie 50 € gegenüber Einzelbuchung</div>
+          <ul class="service-list">
+            <li class="service-item">
+              <div class="service-item-title">
+                <span class="name">Basis-Reinigung</span>
+              </div>
+            </li>
+            <li class="service-item">
+              <div class="service-item-title">
+                <span class="name">Cockpit &amp; Kunststoff</span>
+              </div>
+            </li>
+            <li class="service-item">
+              <div class="service-item-title">
+                <span class="name">Polster Tiefenreinigung</span>
+              </div>
+              <p class="service-item-note">bei Leder: spezielle Lederpflege</p>
+            </li>
+            <li class="service-item">
+              <div class="service-item-title">
+                <span class="name">Scheiben innen</span>
+              </div>
+            </li>
+          </ul>
+          <a href="https://wa.me/4915119455591?text=Hallo%2C%20ich%20m%C3%B6chte%20das%20Komplett-Paket%20Rundum%20Frisch%20f%C3%BCr%2065%20%E2%82%AC%20buchen." class="btn btn-primary" target="_blank" rel="noopener">Jetzt buchen</a>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====================== ÜBER UNS ====================== -->
+  <section class="section ueber" id="ueber">
+    <div class="container">
+      <div class="ueber-grid">
+        <div class="ueber-text reveal">
+          <span class="eyebrow">Über uns</span>
+          <h2 class="h-section">JM Innenaufbereitung<br /><span style="color: var(--gold); font-style: italic; font-size: 0.65em; font-weight: 500;">Präzision &amp; Reinheit</span></h2>
+          <p>Wir sind Jungunternehmer aus Wunstorf, spezialisiert auf die Innenaufbereitung von Fahrzeugen.</p>
+          <p>Mit professionellen Produkten, präziser Handarbeit und einem Auge fürs Detail bringen wir den Innenraum Ihres Autos wieder auf Hochglanz — direkt bei Ihnen vor Ort.</p>
+          <div class="ueber-features">
+            <span class="feature-pill">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+              Premium-Produkte
+            </span>
+            <span class="feature-pill">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+              100% Handarbeit
+            </span>
+            <span class="feature-pill">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+              Faire Festpreise
+            </span>
+            <span class="feature-pill">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+              Mobil vor Ort
+            </span>
+          </div>
+        </div>
+        <div class="ueber-visual reveal">
+          <img src="images/logo.jpeg" alt="JM Innenaufbereitung Logo" loading="lazy" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====================== ABLAUF ====================== -->
+  <section class="section" id="ablauf">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="eyebrow">Unser Prozess</span>
+        <h2 class="h-section">In drei Schritten zum Glanz</h2>
+      </div>
+      <div class="ablauf-grid">
+        <article class="ablauf-step reveal">
+          <h3>Anfragen</h3>
+          <p>Schreiben Sie uns auf WhatsApp oder über das Kontaktformular. Wir besprechen Ihren Bedarf und finden den passenden Termin.</p>
+        </article>
+        <article class="ablauf-step reveal">
+          <h3>Termin vor Ort</h3>
+          <p>Wir kommen zu Ihnen. Sie benötigen lediglich einen Stellplatz mit Zugang zu Strom und Wasser — alles andere bringen wir mit.</p>
+        </article>
+        <article class="ablauf-step reveal">
+          <h3>Saubere Übergabe</h3>
+          <p>Sie erhalten Ihr Fahrzeug mit frischem Innenraum zurück — gepflegt, sauber und bereit für Ihre nächste Fahrt.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====================== GALERIE ====================== -->
+  <section class="section" id="galerie">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="eyebrow">Unsere Arbeit</span>
+        <h2 class="h-section">Ergebnisse, die überzeugen</h2>
+        <p>Eine Auswahl unserer Aufbereitungen — wird laufend erweitert.</p>
+      </div>
+      <div class="galerie-grid">
+        <!--
+          ANLEITUNG ZUM HINZUFÜGEN VON BILDERN:
+          1. Bild in den Ordner /images/ legen (z.B. /images/auftrag-1.jpg)
+          2. Im jeweiligen .galerie-item einfach <img src="images/auftrag-1.jpg" alt="..."> einsetzen
+        -->
+        <div class="galerie-item">
+          <svg class="placeholder-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="M21 15l-5-5L5 21"/></svg>
+        </div>
+        <div class="galerie-item">
+          <svg class="placeholder-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="M21 15l-5-5L5 21"/></svg>
+        </div>
+        <div class="galerie-item">
+          <svg class="placeholder-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="M21 15l-5-5L5 21"/></svg>
+        </div>
+        <div class="galerie-item">
+          <svg class="placeholder-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="M21 15l-5-5L5 21"/></svg>
+        </div>
+        <div class="galerie-item">
+          <svg class="placeholder-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="M21 15l-5-5L5 21"/></svg>
+        </div>
+        <div class="galerie-item">
+          <svg class="placeholder-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="M21 15l-5-5L5 21"/></svg>
+        </div>
+      </div>
+      <p class="galerie-hint">Galerie wird mit echten Aufträgen laufend erweitert.</p>
+    </div>
+  </section>
+
+  <!-- ====================== ONLINE-BUCHUNG ====================== -->
+  <section class="section" id="buchung">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="eyebrow">Online-Buchung</span>
+        <h2 class="h-section">Termin direkt buchen</h2>
+        <p>Wählen Sie Ihren Wunschtermin online aus — schnell und unkompliziert.</p>
+      </div>
+
+      <div class="buchung-wrap reveal">
+        <span class="buchung-info">📅 Termine aktuell freitags, samstags &amp; sonntags</span>
+
+        <!--
+          CALENDLY EMBED:
+          1. Konto erstellen auf calendly.com (kostenlos)
+          2. Event-Type anlegen (z.B. "Innenaufbereitung Termin")
+          3. Verfügbarkeit auf Fr/Sa/So einstellen
+          4. data-url unten anpassen: https://calendly.com/IHR-USERNAME/IHR-EVENT
+        -->
+        <div class="calendly-inline-widget" data-url="https://calendly.com/example" style="display:none;"></div>
+
+        <div class="calendly-placeholder" id="calendlyPlaceholder">
+          <strong>Calendly-Buchung wird hier eingebettet</strong>
+          <p style="margin-top: 1rem;">Sobald ein Calendly-Konto eingerichtet ist, erscheint hier der direkte Buchungskalender. Bis dahin gerne per WhatsApp oder Kontaktformular anfragen.</p>
+          <a href="https://wa.me/4915119455591?text=Hallo%2C%20ich%20m%C3%B6chte%20einen%20Termin%20vereinbaren." class="btn btn-primary" target="_blank" rel="noopener" style="margin-top: 1.5rem;">
+            Termin per WhatsApp anfragen
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====================== FAQ ====================== -->
+  <section class="section" id="faq">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="eyebrow">FAQ</span>
+        <h2 class="h-section">Häufige Fragen</h2>
+      </div>
+
+      <div class="faq-wrap">
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">
+            <span>Was muss ich vor Ihrem Besuch vorbereiten?</span>
+            <span class="icon" aria-hidden="true"></span>
+          </button>
+          <div class="faq-answer">
+            <p>Wir benötigen einen Stellplatz mit Zugang zu Strom und Wasser in Reichweite. Idealerweise mit etwas Bewegungsfreiheit rund um das Fahrzeug. Alles andere bringen wir mit.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">
+            <span>Wann sind Termine möglich?</span>
+            <span class="icon" aria-hidden="true"></span>
+          </button>
+          <div class="faq-answer">
+            <p>Termine bieten wir aktuell freitags, samstags und sonntags an. Weitere Tage werden je nach Auslastung erweitert.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">
+            <span>Wie lange dauert eine Innenaufbereitung?</span>
+            <span class="icon" aria-hidden="true"></span>
+          </button>
+          <div class="faq-answer">
+            <p>Eine Basis-Reinigung dauert etwa 1–1,5 Stunden. Das Komplett-Paket „Rundum Frisch" benötigt je nach Verschmutzungsgrad 2,5–4 Stunden.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">
+            <span>Was kostet die Anfahrt?</span>
+            <span class="icon" aria-hidden="true"></span>
+          </button>
+          <div class="faq-answer">
+            <p>Im Servicegebiet Wunstorf ist die Anfahrt kostenlos. Anfragen aus dem Umland prüfen wir gerne individuell.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">
+            <span>Welche Produkte verwendet ihr?</span>
+            <span class="icon" aria-hidden="true"></span>
+          </button>
+          <div class="faq-answer">
+            <p>Wir arbeiten ausschließlich mit professionellen Produkten — unter anderem von Koch Chemie. Die Produktauswahl passen wir individuell an Ihr Fahrzeug an.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">
+            <span>Wie wird Lederausstattung behandelt?</span>
+            <span class="icon" aria-hidden="true"></span>
+          </button>
+          <div class="faq-answer">
+            <p>Bei Ledersitzen verwenden wir keinen Sprühextrahierer, sondern spezielle Lederreiniger und Lederpflege von Koch Chemie. Das Leder wird schonend gereinigt und gepflegt.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">
+            <span>Was passiert bei Regen?</span>
+            <span class="icon" aria-hidden="true"></span>
+          </button>
+          <div class="faq-answer">
+            <p>Da wir den Innenraum aufbereiten, sind wir wetterunabhängig — Sie benötigen lediglich einen Stellplatz, an dem wir das Fahrzeug öffnen können (z. B. Garage, Carport oder Hof).</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">
+            <span>Wie kann ich bezahlen?</span>
+            <span class="icon" aria-hidden="true"></span>
+          </button>
+          <div class="faq-answer">
+            <p>Die Bezahlung erfolgt in bar nach Abschluss der Aufbereitung.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====================== CTA BANNER ====================== -->
+  <section class="cta-banner">
+    <div class="container">
+      <h2 class="h-section reveal">Bereit für ein frisches Cockpit?</h2>
+      <p class="reveal">Vereinbaren Sie jetzt Ihren Termin — schnell und unkompliziert per WhatsApp.</p>
+      <a href="https://wa.me/4915119455591?text=Hallo%2C%20ich%20m%C3%B6chte%20einen%20Termin%20vereinbaren." class="btn btn-primary reveal" target="_blank" rel="noopener">
+        Jetzt Termin anfragen
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+      </a>
+    </div>
+  </section>
+
+  <!-- ====================== KONTAKT ====================== -->
+  <section class="section" id="kontakt">
+    <div class="container">
+      <div class="section-header left reveal">
+        <span class="eyebrow">Kontakt</span>
+        <h2 class="h-section">Sprechen Sie uns an</h2>
+        <p>Wir freuen uns auf Ihre Anfrage.</p>
+      </div>
+
+      <div class="kontakt-grid">
+        <div class="kontakt-info reveal">
+          <div class="kontakt-detail">
+            <div class="label">Servicegebiet</div>
+            <div class="value">Wunstorf</div>
+            <p class="hint">Service-Region wird laufend erweitert.</p>
+          </div>
+          <div class="kontakt-detail">
+            <div class="label">WhatsApp</div>
+            <div class="value">
+              <a href="https://wa.me/4915119455591" target="_blank" rel="noopener">+49 1511 9455591</a>
+            </div>
+            <p class="hint">Bevorzugter Kontaktweg für schnelle Antworten.</p>
+          </div>
+          <div class="kontakt-detail">
+            <div class="label">E-Mail</div>
+            <div class="value">
+              <a href="mailto:jakobsoelle@gmail.com">jakobsoelle@gmail.com</a>
+            </div>
+          </div>
+          <div class="kontakt-detail">
+            <div class="label">Termine</div>
+            <div class="value">Fr · Sa · So</div>
+          </div>
+        </div>
+
+        <!-- Kontaktformular (Netlify Forms ready) -->
+        <form class="kontakt-form reveal" name="kontakt" method="POST" data-netlify="true" data-netlify-honeypot="bot-field" id="kontaktForm">
+          <input type="hidden" name="form-name" value="kontakt" />
+          <div class="form-honeypot">
+            <label>Nicht ausfüllen: <input name="bot-field" /></label>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="name">Name</label>
+            <input class="form-input" type="text" id="name" name="name" required autocomplete="name" />
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="kontaktdaten">Telefon oder E-Mail</label>
+            <input class="form-input" type="text" id="kontaktdaten" name="kontaktdaten" required autocomplete="tel email" />
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="nachricht">Ihre Nachricht</label>
+            <textarea class="form-textarea" id="nachricht" name="nachricht" required></textarea>
+          </div>
+
+          <button type="submit" class="btn btn-primary" style="width:100%;">
+            Nachricht senden
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+          </button>
+
+          <div class="form-status" id="formStatus"></div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====================== FOOTER ====================== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <img src="images/logo.jpeg" alt="JM Innenaufbereitung" loading="lazy" />
+          <p>Mobile Auto-Innenaufbereitung in Wunstorf. Präzision &amp; Reinheit — mit professionellen Produkten und 100% Handarbeit.</p>
+        </div>
+        <div class="footer-col">
+          <h4>Navigation</h4>
+          <ul>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#ueber">Über uns</a></li>
+            <li><a href="#ablauf">Ablauf</a></li>
+            <li><a href="#buchung">Termin</a></li>
+            <li><a href="#faq">FAQ</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Kontakt</h4>
+          <ul>
+            <li><a href="https://wa.me/4915119455591" target="_blank" rel="noopener">WhatsApp</a></li>
+            <li><a href="mailto:jakobsoelle@gmail.com">E-Mail</a></li>
+            <li>Wunstorf</li>
+            <li>Fr · Sa · So</li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2026 JM Innenaufbereitung</span>
+        <span>Alle Rechte vorbehalten.</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Floating WhatsApp Button -->
+  <a href="https://wa.me/4915119455591?text=Hallo%2C%20ich%20habe%20eine%20Frage%20zur%20Innenaufbereitung." class="whatsapp-float" target="_blank" rel="noopener" aria-label="Per WhatsApp schreiben">
+    <svg viewBox="0 0 24 24" fill="currentColor">
+      <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+    </svg>
+  </a>
+
+  <!-- ====================== JAVASCRIPT ====================== -->
+  <script>
+    /* ============ NAV SCROLL ============ */
+    const nav = document.getElementById('nav');
+    const onScroll = () => {
+      if (window.scrollY > 20) nav.classList.add('scrolled');
+      else nav.classList.remove('scrolled');
+    };
+    window.addEventListener('scroll', onScroll, { passive: true });
+    onScroll();
+
+    /* ============ MOBILE MENU ============ */
+    const burger = document.getElementById('navBurger');
+    const mobileMenu = document.getElementById('mobileMenu');
+    const mmLinks = document.querySelectorAll('.mm-link');
+
+    burger.addEventListener('click', () => {
+      const open = mobileMenu.classList.toggle('open');
+      burger.setAttribute('aria-expanded', open);
+      document.body.style.overflow = open ? 'hidden' : '';
+    });
+    mmLinks.forEach(link => link.addEventListener('click', () => {
+      mobileMenu.classList.remove('open');
+      burger.setAttribute('aria-expanded', 'false');
+      document.body.style.overflow = '';
+    }));
+
+    /* ============ VORHER/NACHHER SLIDER ============ */
+    const slider = document.getElementById('slider');
+    const sliderAfter = document.getElementById('sliderAfter');
+    const sliderHandle = document.getElementById('sliderHandle');
+
+    let isDragging = false;
+
+    const setSliderPosition = (clientX) => {
+      const rect = slider.getBoundingClientRect();
+      let pct = ((clientX - rect.left) / rect.width) * 100;
+      pct = Math.max(0, Math.min(100, pct));
+      sliderAfter.style.clipPath = `polygon(0 0, ${pct}% 0, ${pct}% 100%, 0 100%)`;
+      sliderHandle.style.left = `${pct}%`;
+      slider.setAttribute('aria-valuenow', Math.round(pct));
+    };
+
+    const startDrag = (e) => {
+      isDragging = true;
+      e.preventDefault();
+    };
+    const stopDrag = () => { isDragging = false; };
+    const onDrag = (e) => {
+      if (!isDragging) return;
+      const clientX = e.touches ? e.touches[0].clientX : e.clientX;
+      setSliderPosition(clientX);
+    };
+
+    slider.addEventListener('mousedown', startDrag);
+    slider.addEventListener('touchstart', startDrag, { passive: false });
+    window.addEventListener('mousemove', onDrag);
+    window.addEventListener('touchmove', onDrag, { passive: true });
+    window.addEventListener('mouseup', stopDrag);
+    window.addEventListener('touchend', stopDrag);
+
+    // Auch Klick auf Slider bewegt den Handle dorthin
+    slider.addEventListener('click', (e) => {
+      setSliderPosition(e.clientX);
+    });
+
+    // Tastatur-Bedienung
+    slider.addEventListener('keydown', (e) => {
+      const current = parseInt(slider.getAttribute('aria-valuenow') || '50', 10);
+      let next = current;
+      if (e.key === 'ArrowLeft') next = Math.max(0, current - 5);
+      if (e.key === 'ArrowRight') next = Math.min(100, current + 5);
+      if (next !== current) {
+        sliderAfter.style.clipPath = `polygon(0 0, ${next}% 0, ${next}% 100%, 0 100%)`;
+        sliderHandle.style.left = `${next}%`;
+        slider.setAttribute('aria-valuenow', next);
+      }
+    });
+
+    /* ============ FAQ ACCORDION ============ */
+    document.querySelectorAll('.faq-item').forEach(item => {
+      const question = item.querySelector('.faq-question');
+      question.addEventListener('click', () => {
+        const isOpen = item.classList.contains('open');
+        // Close others
+        document.querySelectorAll('.faq-item').forEach(i => {
+          i.classList.remove('open');
+          i.querySelector('.faq-question').setAttribute('aria-expanded', 'false');
+        });
+        if (!isOpen) {
+          item.classList.add('open');
+          question.setAttribute('aria-expanded', 'true');
+        }
+      });
+    });
+
+    /* ============ REVEAL ON SCROLL ============ */
+    const reveals = document.querySelectorAll('.reveal');
+    const io = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+          io.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.1, rootMargin: '0px 0px -60px 0px' });
+    reveals.forEach(el => io.observe(el));
+
+    /* ============ KONTAKTFORMULAR ============ */
+    /*
+      Hinweis: Das Formular ist mit Netlify Forms vorbereitet.
+      Sobald die Seite auf Netlify deployed ist, werden Einsendungen
+      automatisch im Netlify-Dashboard unter "Forms" angezeigt.
+      Honeypot-Feld schützt gegen Spam (kein externes Captcha nötig).
+    */
+    const form = document.getElementById('kontaktForm');
+    const formStatus = document.getElementById('formStatus');
+
+    form.addEventListener('submit', async (e) => {
+      // Lokaler Test-Modus: Wenn die Seite noch nicht auf Netlify läuft,
+      // verhindern wir den Default-Submit und zeigen eine Demo-Bestätigung.
+      const isNetlify = window.location.hostname.includes('netlify');
+      if (!isNetlify) {
+        e.preventDefault();
+        formStatus.className = 'form-status success';
+        formStatus.textContent = '✓ Demo-Modus: Sobald die Seite auf Netlify läuft, werden echte Anfragen versendet.';
+        form.reset();
+        setTimeout(() => { formStatus.className = 'form-status'; }, 5000);
+      }
+      // Auf Netlify übernimmt Netlify Forms den Submit automatisch
+    });
+  </script>
+
+</body>
+</html>
